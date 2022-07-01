@@ -1,0 +1,84 @@
+l<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .form-control {
+            display: flex;
+        }
+
+        #content {
+            padding: 5px;
+            height: 45px;
+            width: 400px;
+            resize: none;
+        }
+
+        .form-control button {
+            height: 57px;
+            line-height: 45px;
+            border: none;
+            background-color: #ccc;
+            text-align: center;
+            width: 80px;
+            margin-left: 5px;
+
+        }
+
+        #list-task {
+            width: 600px;
+        }
+
+        #list-task h4 {
+            text-transform: uppercase;
+            font-size: 18px;
+        }
+
+        #list-task ul {
+            list-style-type: none;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        #list-task ul li {
+            display: flex;
+        }
+
+        #list-task ul li div {
+            width: 80%;
+        }
+        #list-task ul li a{
+            text-decoration: none;
+            display: block;
+            margin-right: 8px;
+            color: black;
+        }
+        #list-task ul li a :last-child{
+            text-decoration: none;
+            display: block;
+            margin-right: 8px;
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form-control">
+        <textarea class="content" id="content" placeholder="what need to do "></textarea>
+        <button>Add task</button>
+    </div>
+
+    <div id="list-task">
+        <h4>
+            Task Mananger
+        </h4>
+       <div id="result"></div>
+    </div>
+    <script src="./task.js"></script>
+</body>
+
+</html>
